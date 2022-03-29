@@ -1,0 +1,54 @@
+#Home {
+  height: 800px;
+}
+
+.Home_img {
+  background-image: url("../Assets//homebg.jpg");
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color:rgba(0, 0, 0, 0)  ;
+  position: relative;
+
+ 
+}
+
+
+.Home_img::before{
+    content: "";
+    background: linear-gradient(135deg, #10054d 0%, #45108a 100%);
+}
+
+.Home_img::after{
+    content: "";
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: -webkit-radial-gradient(50% 50%, circle closest-side, #af52ed 0%, #8830df 100%); */
+    background: linear-gradient(135deg, #10054d 0%, #45108a 100%);
+
+    z-index: 1;
+}
+
+
+.Home_img > * {
+    z-index: 100;
+}
+
+.Home_img::after {
+    opacity: 0.95;
+}
+
+#home .welcome-intro h1{
+    font-size: 65px;
+    font-weight: 700 !important;
+    line-height: 1em;
+    letter-spacing: -1.6px;
+}
+
+.fw-4{
+    font-weight: 400 !important;
+}
