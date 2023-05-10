@@ -7,48 +7,89 @@
   background-size: cover;
   height: 100%;
   background-repeat: no-repeat;
-  background-color:rgba(0, 0, 0, 0)  ;
+  background-color: rgba(0, 0, 0, 0);
   position: relative;
-
- 
 }
 
-
-.Home_img::before{
-    content: "";
-    background: linear-gradient(135deg, #10054d 0%, #45108a 100%);
-}
-
-.Home_img::after{
-    content: "";
-    opacity: .7;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: -webkit-radial-gradient(50% 50%, circle closest-side, #af52ed 0%, #8830df 100%); */
-    background: linear-gradient(135deg, #10054d 0%, #45108a 100%);
-
-    z-index: 1;
-}
-
-
-.Home_img > * {
-    z-index: 100;
+.Home_img::before {
+  content: "";
+  background: linear-gradient(135deg, #10054d 0%, #45108a 100%);
 }
 
 .Home_img::after {
-    opacity: 0.95;
+  content: "";
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: -webkit-radial-gradient(50% 50%, circle closest-side, #af52ed 0%, #8830df 100%); */
+  background: linear-gradient(135deg, #10054d 0%, #45108a 100%);
+
+  z-index: 1;
 }
 
-#home .welcome-intro h1{
-    font-size: 65px;
-    font-weight: 700 !important;
-    line-height: 1em;
-    letter-spacing: -1.6px;
+.Home_img > * {
+  z-index: 100;
 }
 
-.fw-4{
-    font-weight: 400 !important;
+.Home_img::after {
+  opacity: 0.95;
+}
+
+#home .welcome-intro h1 {
+  font-size: 65px;
+  font-weight: 700 !important;
+  line-height: 1em;
+  letter-spacing: -1.6px;
+}
+
+.fw-4 {
+  font-weight: 400 !important;
+}
+
+.Animation_images_wrapper {
+  border: 2px solid red;
+  position: relative;
+}
+
+:is(.img1, .img2, .img3, .img4) {
+    /* border: 2px solid; */
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.img1{
+    top: -25%;
+    left: 30%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    z-index: 3
+}
+
+.img2{
+    top: 30%;
+    left: 19%;
+    width: max-content;
+    z-index: 3;
+    position: absolute;
+}
+
+.img3{
+    top: 44%;
+    left: 4%;
+    width: max-content;
+    z-index: 2;
+    position: absolute;
+}
+
+.img4{
+    position: relative;
+    display: inline-block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
 }
